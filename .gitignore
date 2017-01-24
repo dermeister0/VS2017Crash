@@ -1,0 +1,5 @@
+.vs/
+BadProjects/packages/
+bin/
+obj/
+*.user
