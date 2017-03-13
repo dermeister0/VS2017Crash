@@ -3,6 +3,8 @@
     <!-- Does not work -->
     <VSToolsPath Condition="$(VSToolsPath) == ''">..\packages\MSBuild.Microsoft.VisualStudio.Web.targets.14.0.0.3\tools\VSToolsPath</VSToolsPath>
     <!-- Works. -->
+    <!--<VSToolsPath Condition="$(VSToolsPath) == ''">$(MSBuildThisFileDirectory)..\packages\MSBuild.Microsoft.VisualStudio.Web.targets.14.0.0.3\tools\VSToolsPath</VSToolsPath>-->
+    <!-- Works. -->
     <!--<VSToolsPath Condition="$(VSToolsPath) == ''">C:\Work\VS2017Crash\BadProjects\packages\MSBuild.Microsoft.VisualStudio.Web.targets.14.0.0.3\tools\VSToolsPath</VSToolsPath>-->
   </PropertyGroup>
   <Import Project="..\packages\MSBuild.Microsoft.VisualStudio.Web.targets.14.0.0.3\build\MSBuild.Microsoft.VisualStudio.Web.targets.props" Condition="Exists('..\packages\MSBuild.Microsoft.VisualStudio.Web.targets.14.0.0.3\build\MSBuild.Microsoft.VisualStudio.Web.targets.props')" />
